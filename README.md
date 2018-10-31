@@ -28,8 +28,6 @@ npm install
 npm run dev
 ```
 
-
-
 > 注意：
 >
 > - 启动服务之前务必保证先启动 mongodb 数据库
@@ -50,7 +48,9 @@ npm run dev
 
 ### 基准路径
 
+> `http://localhost:8000/api/v1/`
 
+---
 
 ## 用户
 
