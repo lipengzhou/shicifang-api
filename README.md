@@ -74,7 +74,7 @@ BODY
 
 ```json
 {
-  urlToken: "xxx"
+  "urlToken": "xxx"
 }
 ```
 
@@ -106,9 +106,9 @@ BODY
 
 ```json
 {
-  "email": user.email,
-  "password": user.password,
-  "nickname": user.nickname
+  "email": "xxx",
+  "password": "xxx",
+  "nickname": "xxx"
 }
 ```
 
@@ -120,8 +120,8 @@ BODY
 
 ```json
 {
-  "email": user.email,
-  "password": user.password
+  "email": "xxx",
+  "password": "xxx"
 }
 ```
 
@@ -146,7 +146,7 @@ BODY
 
 ### 更新用户密码
 
-> `PATCH` /users/${userId}/password
+> `PATCH` /users/:userId/password
 
 BODY
 
