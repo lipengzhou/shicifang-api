@@ -1,0 +1,29 @@
+{
+  "name": "api",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "test": "tap test/*.test.js test/*/*.test.js test/*/*/*.test.js",
+    "start": "fastify start --port 8000 --address 0.0.0.0 -l info app.js",
+    "dev": "fastify start --port 8000 --address 0.0.0.0 -l info --pretty-logs --watch app.js",
+    "db:back": "mongodump -d test -o db_data/",
+    "db:restore": "mongorestore -d test --dir db_data/test"
+  },
+  "dependencies": {
+    "fastify": "^1.11.0",
+    "fastify-autoload": "^0.5.0",
+    "fastify-cli": "^0.22.1",
+    "fastify-cors": "^0.1.0",
+    "fastify-file-upload": "^0.1.1",
+    "fastify-formbody": "^2.0.1",
+    "fastify-jwt": "^0.3.0",
+    "fastify-plugin": "^1.2.0",
+    "fastify-static": "^0.14.0",
+    "gm": "^1.23.1",
+    "mongoose": "^5.2.14"
+  },
+  "devDependencies": {
+    "tap": "^12.0.0"
+  }
+}
